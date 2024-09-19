@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/cityFragment">
+
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.dijitalgaraj.study.ui.city.CityFragment"
+        android:label="CityFragment" >
+        <action
+            android:id="@+id/action_cityFragment_to_districtFragment"
+            app:destination="@id/districtFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/districtFragment"
+        android:name="com.dijitalgaraj.study.ui.district.DistrictFragment"
+        android:label="DistrictFragment" >
+        <argument
+            android:name="place"
+            app:nullable="true"
+            app:argType="com.dijitalgaraj.study.models.Place"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtTitleCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Istanbul"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:paddingVertical="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBackCities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtBackCities" />
+    <TextView
+        android:id="@+id/txtBackCities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şehirler"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imgBack"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTitleCity"
+        app:layout_constraintTop_toTopOf="@+id/txtTitleCity" />
+
+    <View
+        android:id="@+id/viewBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@+id/imgBack"
+        app:layout_constraintTop_toTopOf="@+id/imgBack"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBack"
+        app:layout_constraintEnd_toEndOf="@+id/txtBackCities"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleCity" />
+</androidx.constraintlayout.widget.ConstraintLayout>

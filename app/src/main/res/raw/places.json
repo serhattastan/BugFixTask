@@ -1,0 +1,132 @@
+[
+    {
+        "title": "İstanbul",
+        "places": [
+            "Kadıköy", "Beşiktaş", "Taksim", "Üsküdar", "Sarıyer", "Şişli", "Fatih",
+            "Bakırköy", "Kartal", "Maltepe", "Ataşehir", "Beykoz", "Zeytinburnu",
+            "Eminönü", "Beylikdüzü", "Kağıthane", "Bağcılar", "Avcılar",
+            "Gaziosmanpaşa", "Büyükçekmece", "Küçükçekmece", "Silivri",
+            "Çatalca", "Sultangazi", "Eyüp", "Esenler", "Güngören", "Bayrampaşa"
+        ],
+        "colorName": "Mor",
+        "color": "#9400D3"
+    },
+    {
+        "title": "İzmir",
+        "places": [
+            "Konak", "Karşıyaka", "Bornova", "Alsancak", "Buca", "Balçova",
+            "Narlıdere", "Gaziemir", "Çeşme", "Foça", "Seferihisar", "Urla",
+            "Torbalı", "Menemen", "Aliağa", "Dikili", "Bergama", "Tire",
+            "Ödemiş", "Selçuk", "Bayraklı", "Karabağlar", "Kemalpaşa", "Menderes"
+        ],
+        "colorName": "Siyah",
+        "color": "#000000"
+    },
+    {
+        "title": "Muğla",
+        "places": [
+            "Bodrum", "Marmaris", "Fethiye", "Datça", "Ortaca", "Köyceğiz",
+            "Dalaman", "Seydikemer", "Milas", "Yatağan", "Ula", "Kavaklıdere",
+            "Gökova", "Ölüdeniz", "Göcek", "Turgutreis", "Akyaka", "Hisarönü",
+            "Bitez", "Çamlık", "Gümüşlük", "Torba", "Ortakent", "Göltürkbükü",
+            "Karaköy"
+        ],
+        "colorName": "Mavi",
+        "color": "#0000FF"
+    },
+    {
+        "title": "Ankara",
+        "places": [
+            "Çankaya", "Kızılay", "Sincan", "Keçiören", "Mamak", "Etimesgut",
+            "Altındağ", "Pursaklar", "Beypazarı", "Polatlı", "Şereflikoçhisar",
+            "Akyurt", "Çubuk", "Elmadağ", "Gölbaşı", "Haymana", "Kalecik",
+            "Kızılcahamam", "Nallıhan", "Yenimahalle", "Bağlum", "Kazandağ",
+            "Kale", "Dikmen", "Bala"
+        ],
+        "colorName": "Yeşil",
+        "color": "#42C19B"
+    },
+    {
+        "title": "Antalya",
+        "places": [
+            "Alanya", "Kemer", "Kaş", "Manavgat", "Side", "Lara", "Konyaaltı",
+            "Muratpaşa", "Döşemealtı", "Kepez", "Serik", "Finike", "Kumluca",
+            "Korkuteli", "Gazipaşa", "Demre", "Elmalı", "İbradı", "Akseki",
+            "Gündoğmuş", "Aksu", "Belek", "Çıralı", "Olympos"
+        ],
+        "colorName": "Sarı",
+        "color": "#FFCA43"
+    },
+    {
+        "title": "Bursa",
+        "places": [
+            "Osmangazi", "Yıldırım", "Nilüfer", "İnegöl", "Gemlik", "Mudanya",
+            "Karacabey", "Mustafakemalpaşa", "Yenişehir", "Kestel", "Orhangazi",
+            "İznik", "Gürsu", "Harmancık", "Keles", "Orhaneli", "Büyükorhan"
+        ],
+        "colorName": "Turuncu",
+        "color": "#FF7F00"
+    },
+    {
+        "title": "Adana",
+        "places": [
+            "Seyhan", "Yüreğir", "Çukurova", "Sarıçam", "Ceyhan", "Karataş",
+            "Kozan", "Pozantı", "Feke", "Saimbeyli", "Tufanbeyli", "İmamoğlu",
+            "Karaisalı", "Aladağ", "Yumurtalık"
+        ],
+        "colorName": "Kırmızı",
+        "color": "#FF0000"
+    },
+    {
+        "title": "Gaziantep",
+        "places": [
+            "Şahinbey", "Şehitkamil", "Nizip", "Islahiye", "Araban", "Karkamış",
+            "Yavuzeli", "Oğuzeli", "Nurdağı"
+        ],
+        "colorName": "Lacivert",
+        "color": "#000080"
+    },
+    {
+        "title": "Trabzon",
+        "places": [
+            "Ortahisar", "Akçaabat", "Of", "Sürmene", "Vakfıkebir", "Maçka",
+            "Çaykara", "Beşikdüzü", "Araklı", "Yomra", "Arsin", "Tonya",
+            "Düzköy", "Dernekpazarı", "Hayrat", "Köprübaşı", "Çarşıbaşı",
+            "Şalpazarı"
+        ],
+        "colorName": "Gri",
+        "color": "#808080"
+    },
+    {
+        "title": "Konya",
+        "places": [
+            "Selçuklu", "Meram", "Karatay", "Beyşehir", "Akşehir", "Ereğli",
+            "Ilgın", "Seydişehir", "Çumra", "Kulu", "Cihanbeyli", "Kadınhanı",
+            "Doğanhisar", "Hüyük", "Yunak", "Sarayönü", "Bozkır", "Hadim",
+            "Taşkent", "Ahırlı", "Derebucak", "Emirgazi", "Güneysınır"
+        ],
+        "colorName": "Pembe",
+        "color": "#FFCBDB"
+    },
+    {
+        "title": "Balıkesir",
+        "places": [
+            "Ayvalık", "Bandırma", "Edremit", "Burhaniye", "Erdek", "Gömeç",
+            "Gönen", "Susurluk", "Dursunbey", "Havran", "İvrindi", "Kepsut",
+            "Sındırgı", "Savaştepe", "Balya", "Bigadiç", "Marmara", "Altıeylül",
+            "Karesi"
+        ],
+        "colorName": "Kahverengi",
+        "color": "#6C3C0C"
+    },
+    {
+        "title": "Samsun",
+        "places": [
+            "Atakum", "Çarşamba", "Bafra", "Vezirköprü", "Havza", "Terme",
+            "Ladik", "Alaçam", "Kavak", "19 Mayıs", "Tekkeköy", "Salıpazarı",
+            "Ayvacık", "Asarcık", "Yakakent", "Canik", "İlkadım"
+        ],
+        "colorName": "Bordo",
+        "color": "#800000"
+    }
+]

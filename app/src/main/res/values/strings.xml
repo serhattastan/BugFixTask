@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Study</string>
+    <string name="district_count">%1$s İlçe</string>
+</resources>
