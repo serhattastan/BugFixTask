@@ -3,6 +3,7 @@ package com.dijitalgaraj.study.ui.city
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.dijitalgaraj.study.R
 import com.dijitalgaraj.study.base.BaseActionState
@@ -81,16 +82,13 @@ class CityFragment : BaseFragment<CityViewModel, CityListFragmentBinding>(
     }
 
 
-    @OptIn(DelicateCoroutinesApi::class)
     fun navigateDetail() {
-        GlobalScope.launch {
-            withContext(Dispatchers.IO) {
-                val data = DistrictFragmentArgs(viewModel.selectedItem)
-                findNavController().navigate(R.id.districtFragment, data.toBundle())
-           }
+        viewLifecycleOwner.lifecycleScope.launch(Dispatchers.Main) {
+            val data = DistrictFragmentArgs(viewModel.selectedItem)
+            findNavController().navigate(R.id.districtFragment, data.toBundle())
         }
-
     }
+
 
 
 }
