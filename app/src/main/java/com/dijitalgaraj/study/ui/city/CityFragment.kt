@@ -63,15 +63,14 @@ class CityFragment : BaseFragment<CityViewModel, CityListFragmentBinding>(
 
     private fun setupAdapter() {
         cityListAdapter = CityAdapter {
-            if (viewModel.selectedItem != null) {
-                navigateDetail()
-            }
             viewModel.selectedItem = it
+            navigateDetail() // İlk tıklamada navigasyon yapılıyor
         }
 
         binding.rvCities.adapter = cityListAdapter
         cityListAdapter?.submitList(viewModel.baseCityList)
     }
+
 
     private fun setupClickListeners() {
         binding.apply {
