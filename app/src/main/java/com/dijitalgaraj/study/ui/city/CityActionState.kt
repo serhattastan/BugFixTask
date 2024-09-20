@@ -4,5 +4,5 @@ import com.dijitalgaraj.study.base.BaseActionState
 
 sealed class CityActionState : BaseActionState() {
 
-    object Init : CityActionState()
+    data object Init : CityActionState()
 }

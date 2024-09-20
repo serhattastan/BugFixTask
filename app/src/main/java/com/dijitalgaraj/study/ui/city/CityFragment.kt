@@ -14,11 +14,8 @@ import com.dijitalgaraj.study.models.loadPlacesFromJson
 import com.dijitalgaraj.study.ui.city.adapter.CityAdapter
 import com.dijitalgaraj.study.ui.district.DistrictFragmentArgs
 import com.dijitalgaraj.study.utils.extensions.OnTextChangeListener
-import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class CityFragment : BaseFragment<CityViewModel, CityListFragmentBinding>(
     CityViewModel::class.java
@@ -88,7 +85,7 @@ class CityFragment : BaseFragment<CityViewModel, CityListFragmentBinding>(
     }
 
 
-    fun navigateDetail() {
+    private fun navigateDetail() {
         viewLifecycleOwner.lifecycleScope.launch(Dispatchers.Main) {
             val data = DistrictFragmentArgs(viewModel.selectedItem)
             findNavController().navigate(R.id.districtFragment, data.toBundle())

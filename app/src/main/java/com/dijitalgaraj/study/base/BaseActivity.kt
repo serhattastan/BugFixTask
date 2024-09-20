@@ -13,9 +13,9 @@ abstract class BaseActivity<out ViewModel : BaseViewModel<BaseActionState>, Bind
     viewModelClass: Class<ViewModel>,
 ) : AppCompatActivity() {
 
-    protected lateinit var binding: Binding
+    private lateinit var binding: Binding
 
-    protected val viewModel: ViewModel by lazy {
+    private val viewModel: ViewModel by lazy {
         ViewModelProvider(this)[viewModelClass]
     }
 

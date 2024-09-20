@@ -4,5 +4,5 @@ import com.dijitalgaraj.study.base.BaseActionState
 
 sealed class DistrictActionState : BaseActionState() {
 
-    object Init : DistrictActionState()
+    data object Init : DistrictActionState()
 }

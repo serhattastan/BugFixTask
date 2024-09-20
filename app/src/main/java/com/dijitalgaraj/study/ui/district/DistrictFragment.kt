@@ -26,7 +26,7 @@ class DistrictFragment : BaseFragment<DistrictViewModel, DistrictListFragmentBin
     }
 
     override fun renderActionState(actionState: BaseActionState?) {
-        when (val state = actionState as? DistrictActionState) {
+        when (actionState as? DistrictActionState) {
             DistrictActionState.Init -> Unit
             else -> {}
         }
