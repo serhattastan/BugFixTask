@@ -3,6 +3,7 @@ package com.dijitalgaraj.study.ui.city
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
+import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.dijitalgaraj.study.R
@@ -55,11 +56,17 @@ class CityFragment : BaseFragment<CityViewModel, CityListFragmentBinding>(
             }
         }
 
+        binding.edtSearchBar.addTextChangedListener { editable ->
+            editable?.let {
+                textChangeListener?.onTextChanged(it.toString())
+            }
+        }
+
         viewModel.filteredCityList.observe(viewLifecycleOwner) { filteredList ->
             cityListAdapter?.submitList(filteredList)
         }
-
     }
+
 
     private fun setupAdapter() {
         cityListAdapter = CityAdapter {
