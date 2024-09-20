@@ -19,20 +19,13 @@ class CityAdapter (private val onClickItem:(Place) -> Unit) :
     inner class CityAdapterViewHolder(private val binding: CityItemBinding) : RecyclerView.ViewHolder(
         binding.root
     ) {
-        var color:String? = null
         fun bind(item: Place) {
             binding.apply {
-
                 txtCityName.text = item.title
                 txtDistrictCount.text = itemView.context.getString(R.string.district_count, item.places.size.toString())
                 txtColorName.text = item.colorName
-                if (color == null){
-                    color = item.color
-                }
 
-                        card.backgroundTintList = ColorStateList.valueOf(Color.parseColor(color))
-                        color = item.color
-
+                card.backgroundTintList = ColorStateList.valueOf(Color.parseColor(item.color))
 
                 root.setOnClickListener {
                     onClickItem.invoke(item)
@@ -40,6 +33,7 @@ class CityAdapter (private val onClickItem:(Place) -> Unit) :
             }
         }
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CityAdapterViewHolder {
         val mView = CityItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
